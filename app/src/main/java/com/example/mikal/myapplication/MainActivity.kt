@@ -65,8 +65,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        var text = "kayak"
+        isPalindrome(text)
 
+          }
 
+    private fun isPalindrome(text: String) : Boolean{
+        val lowerCaseText = text.toLowerCase()
 
+        return lowerCaseText == lowerCaseText.reversed()
     }
+
+
 }
