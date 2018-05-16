@@ -54,7 +54,15 @@ class MainActivity : AppCompatActivity() {
         var myValue = 10
 
         when(myValue){
+            1 -> {
 
+            }
+            in 2..9 -> {
+
+            }
+            10 -> {
+
+            }
         }
 
 
