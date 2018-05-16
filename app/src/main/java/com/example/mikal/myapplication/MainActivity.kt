@@ -4,7 +4,24 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 
+fun String.isPalindrome() : Boolean{
+    val lowerCaseText = this.toLowerCase()
+
+    return lowerCaseText == lowerCaseText.reversed()
+}
+
+// ANDROID KTX
+
+
 class MainActivity : AppCompatActivity() {
+
+
+
+    val allDogs: List<Dog> by lazy {
+        arrayListOf<Dog>()
+    }
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -70,11 +87,11 @@ class MainActivity : AppCompatActivity() {
 
           }
 
+
     private fun isPalindrome(text: String) : Boolean{
         val lowerCaseText = text.toLowerCase()
 
         return lowerCaseText == lowerCaseText.reversed()
     }
-
 
 }
